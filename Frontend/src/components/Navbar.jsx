@@ -62,12 +62,15 @@ function Navbar() {
                 </Button>
               </Link>
 
+              {!user.isGoverment && 
+
               <Link to="/store-cart">
                 <Button variant="outline" size="sm">
                   <Store className="h-4 w-4 mr-2" />
                   Store
                 </Button>
               </Link>
+              }
 
               <Link to={`/profile/${user.id}`}>
                 <Button variant="outline" size="sm">
